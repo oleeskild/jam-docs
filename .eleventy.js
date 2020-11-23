@@ -1,6 +1,9 @@
 module.exports = function(eleventyConfig) {
 
-  
+    eleventyConfig.addShortcode("button", function(text) {
+        return `<button>${text}</button>`
+    });
+ 
       // make the seed target act like prod
       return {
         dir: {

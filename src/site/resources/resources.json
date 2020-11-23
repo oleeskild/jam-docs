@@ -1,0 +1,5 @@
+{
+    "layout" : "layouts/resource.md",
+    "tags" : "resource",
+    "templateEngineOverride": "njk,md"
+ }

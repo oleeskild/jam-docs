@@ -2,3 +2,15 @@
     title: Jam Docs
     layout: layouts/base.njk
 ---
+{% block main %}
+
+{%- for res in collections.resource -%}
+    <h1> {{res.data.title}} </h1>
+    <div> {{res.data.description}} </div>
+    <div> {{res.templateContent | safe}} </div>
+    <a href= "{{res.data.link}}" >"Gå til ressurs" </a>
+{%- endfor -%}
+
+{% endblock %}
+
+

@@ -2,6 +2,7 @@
 A collection of jamstack resources. Written in 11ty.
 
 ## Setup
+
 ```bash
 npm install
 npm run dev

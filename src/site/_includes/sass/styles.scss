@@ -11,17 +11,22 @@ h1, h2, h3 {
     font-family: Arbutus Slab,sans-serif
 }
 
+h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
-    background-color: rgb(160, 229, 151);
+    background-color: #fff;
 }
 
 footer {
-    margin: auto;
+    margin: 50px auto;
     text-align: center;
 }
 
@@ -29,6 +34,7 @@ footer {
     margin: auto;
     >h2{
         text-align: center;
+        margin-top: 75px;
     }
 }
 
@@ -38,4 +44,18 @@ footer {
     grid-gap: 3.5rem;
     grid-template-columns: repeat(auto-fit,minmax(35ch,1fr));
     margin: 30px;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+a {
+    text-decoration: none;
+    padding: 3px;
+    border-bottom: 2px solid #264f73;
+    width: fit-content;
+    font-weight: 500;
+    color: #264f73;
+    margin-top: 10px;
 }

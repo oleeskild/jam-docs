@@ -5,29 +5,32 @@
 {% block main %}
 
     <div class="content">
-        <h2>Statis Site Generators</h2>
+        <h2>Static Site Generators</h2>
 
         <div class="resources-container">
             {%- for res in collections.ssg -%}
-                <div class="card background-texture">
-                    <h2>
-                        {{res.data.title}}</h2>
-                    <div>{{res.data.description}}</div>
-                    <div>{{res.templateContent | safe}}</div>
-                    <a href= "{{res.data.link}}" >Gå til ressurs</a>
-                </div>
+                {%resourcecard res%} 
+            {%- endfor -%}
+        </div>
+
+         <h2>Hosting</h2>
+        <div class="resources-container">
+            {%- for res in collections.hosting -%}
+                {%resourcecard res%} 
             {%- endfor -%}
         </div>
 
         <h2>Headless CMSes</h2>
         <div class="resources-container">
             {%- for res in collections.cms -%}
-                <div class="card background-texture">
-                    <h2>{{res.data.title}}</h2>
-                    <div>{{res.data.description}}</div>
-                    <div>{{res.templateContent | safe}}</div>
-                    <a href= "{{res.data.link}}" >Gå til ressurs</a>
-                </div>
+                {%resourcecard res%} 
+            {%- endfor -%}
+        </div>
+
+        <h2>Other Data Sources</h2>
+        <div class="resources-container">
+            {%- for res in collections.datasource -%}
+                {%resourcecard res%} 
             {%- endfor -%}
         </div>
     </div>

@@ -3,19 +3,22 @@
     flex-direction: column;
     padding: 10px;
     position: relative;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 3px 5px rgba(0,0,0,.18);
     background-color: #62c4c4; 
+    text-align: center;
 
     &:nth-child(4n+1){
         background-color: #fff;
     }
     &:nth-child(4n+2){
-        background-color: #bb6060; 
+        background-color: #ec9e9e; 
     }
     &:nth-child(4n+3){
-        background-color: #a1be7a; 
+        background-color: #c2d8a5; 
     }
+    
 }

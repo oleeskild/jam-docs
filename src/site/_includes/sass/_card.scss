@@ -1,0 +1,21 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0,0,0,.18);
+
+    &:nth-child(4n+1){
+        background-color: #bb6060; 
+    }
+    &:nth-child(4n+2){
+        background-color: #62c4c4; 
+    }
+    &:nth-child(4n+3){
+        background-color: #a1be7a; 
+    }
+}

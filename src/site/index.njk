@@ -4,13 +4,20 @@
 ---
 {% block main %}
 
-{%- for res in collections.resource -%}
-    <h1> {{res.data.title}} </h1>
-    <div> {{res.data.description}} </div>
-    <div> {{res.templateContent | safe}} </div>
-    <a href= "{{res.data.link}}" >"Gå til ressurs" </a>
-{%- endfor -%}
+    <div class="content">
+        <h2>Resources</h2>
+
+        <div class="resources-container">
+            {%- for res in collections.resource -%}
+                <div class="card background-texture">
+                    <h2>
+                        {{res.data.title}}</h2>
+                    <div>{{res.data.description}}</div>
+                    <div>{{res.templateContent | safe}}</div>
+                    <a href= "{{res.data.link}}" >Gå til ressurs</a>
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
 
 {% endblock %}
-
-

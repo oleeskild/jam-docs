@@ -1,3 +1,41 @@
-.content{
+@import "./texture";
+@import "./card";
+
+body {
+    background-color: #bef5c7;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: Arbutus Slab,sans-serif
+}
+
+header {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    background-color: rgb(160, 229, 151);
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+}
+
+.content {
+    margin: auto;
+    >h2{
+        text-align: center;
+    }
+}
+
+.resources-container {
+    display: grid;
+    justify-items: center;
+    grid-gap: 3.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(35ch,1fr));
+    margin: 30px;
 }

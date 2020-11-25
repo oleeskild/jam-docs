@@ -1,2 +1,7 @@
-# Starter Template 
-A starter template for a eleventy static site with sass and nunjuck templates.
+# Jam Docs
+A collection of jamstack resources. Written in 11ty.
+
+## Deploy to netlfy
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/oleeskild/jam-docs)
+
+By clicking the above button this repo will be cloned into your GitHub account and netlify will deploy it. 

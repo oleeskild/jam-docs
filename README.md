@@ -1,6 +1,6 @@
 # Jam Docs
 A collection of jamstack resources. Written in 11ty.
-
+[Jam Docs](https://ole.dev/jam)
 ## Setup
 
 ```bash
